@@ -1,0 +1,32 @@
+{
+  "name": "aws-deploy-guard",
+  "version": "1.0.0",
+  "description": "Projeto de estudo inspirado em um caso real de falha operacional com deploys sobrepostos em ambiente com estado compartilhado.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrCC/aws-deploy-guard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AndrCC/aws-deploy-guard/issues"
+  },
+  "homepage": "https://github.com/AndrCC/aws-deploy-guard#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  }
+}

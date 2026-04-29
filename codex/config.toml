@@ -1,0 +1,20 @@
+# Project-scoped Codex configuration.
+# Keep this conservative while learning.
+
+approval_policy = "on-request"
+sandbox_mode = "read-only"
+
+[sandbox_workspace_write]
+network_access = false
+
+[shell_environment_policy]
+exclude = [
+  "AWS_ACCESS_KEY_ID",
+  "AWS_SECRET_ACCESS_KEY",
+  "AWS_SESSION_TOKEN",
+  "OPENAI_API_KEY",
+  "ANTHROPIC_API_KEY",
+  "*TOKEN*",
+  "*SECRET*",
+  "*PASSWORD*"
+]
